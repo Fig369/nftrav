@@ -1,0 +1,16 @@
+mira-reeliinda.ravageuniverse.com folder contains everything to display the website
+there are comments in the html that will say what is needed
+edit/update the html as needed
+Webpage layout image references(index-page;index-page-hover|NFT-page;NFT-page-hover) in folder
+images for both webpages have been provided in corresponding folder (gall)
+
+Background image for both pages located in (gall) folder title: BG.png
+Background properties: center at all times, immune to scroll
+
+Front Page Box Colors:
+white border opacity 45%
+white box fill opacity 20%
+
+NFT Page Box Colors:
+NFT box border color hex code: 9972FF 
+NFT box fill color hex code: 9972FF; opacity 45%
