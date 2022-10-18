@@ -9,41 +9,53 @@ body {
 
 h1,h2 {
     color: #fff;
+    font-family: "Comic Sans MS", "Comic Sans", cursive;
+    font-style: italic;
+    font-size: 28px;
 }
 
 p {
     color: #fff;
+    font-family: "Comic Sans MS", "Comic Sans", cursive;
+    font-style: italic;
 }
 
 a {
     color: rgb(255, 255, 255);
     background-color: transparent;
     text-decoration: none;
+    font-family: "Comic Sans MS", "Comic Sans", cursive;
+    font-style: italic;
 }
+
+
 
 .txtcontainer {
     color: #fff;
-    background-color: rgba(255, 255, 255, 0.164);
-    border: 1px solid #fff;
+    background-color: rgba(255, 255, 255, 0.175);
+    border: 3px solid #fff;
     padding: 30px;
-    margin: 30px;
+    margin: 60px;
+    box-shadow:0px 0px 0px 3px black inset;
 }
+
 
 .container {
     position: relative;
     width: 50%;
+    padding: 60px;
   }
   
-  .image {
+.image {
     opacity: 1;
     display: block;
     width: 100%;
     height: auto;
     transition: .5s ease;
     backface-visibility: hidden;
-  }
+}
   
-  .middle {
+.middle {
     transition: .5s ease;
     opacity: 0;
     position: absolute;
@@ -52,21 +64,123 @@ a {
     transform: translate(-50%, -50%);
     -ms-transform: translate(-50%, -50%);
     text-align: center;
-  }
+}
+
+.center {
+  margin: auto;
+  width: 50%;
+  padding: 10px;
+  text-align: center;
+}
   
   
-  .container:hover .image {
+.container:hover .image {
     opacity: 0.3;
-  }
+}
   
-  .container:hover .middle {
+.container:hover .middle {
     opacity: 1;
-  }
+}
   
-  .text {
+.text {
     background-color: #00000000;
     color: white;
     font-size: 16px;
     padding: 16px 32px;
-  }
+}
+
+div.text-container {
+  margin: 0 auto;
+  width: 75%;    
+}
+
+.hideContent {
+  overflow: hidden;
+  line-height: 1em;
+  height: 2em;
+}
+
+.showContent {
+  line-height: 1em;
+  height: auto;
+}
+.showContent{
+  height: auto;
+}
+
+.show-more {
+  padding: 10px 0;
+  text-align: center;
+}
+
+#more1 {display: none;}
+#more2 {display: none;}
+#more3 {display: none;}
+#more4 {display: none;}
+
+#button1,#button2 {
+  color: #fff;
+  background-color: rgba(255, 255, 255, 0.164);
+  border: 1px solid #fff;
+  margin: 70px 30px;
+  padding: 0 41px 0 41px;
+  height: 103px;
+  text-decoration: none;
+  display: inline-block;
+  font-size: 33px;
+}
+
+
+#button-container{
+  display: flex;
+  justify-content: center;
+}
+
+#myBtn1, #myBtn2, #myBtn3, #myBtn4{
+  float: right;
+}
+
+.arrow {
+  border: solid black;
+  border-width: 0 3px 3px 0;
+  display: inline-block;
+  padding: 3px;
+}
+
+#myBtn1, #myBtn2, #myBtn3, #myBtn4 {
+  border: solid black;
+  border-width: 0 3px 3px 0;
+  display: inline-block;
+  padding: 3px;
+}
+
+.down {
+  transform: rotate(45deg);
+  -webkit-transform: rotate(45deg);
+}
+
+/* Create two equal columns that floats next to each other */
+.column {
+  float: left;
+  width: 50%;
+  padding: 10px;
+}
+
+.column img {
+  margin-top: 12px;
+}
+
+/* Clear floats after the columns */
+.row:after {
+  content: "";
+  display: table;
+  clear: both;
+}
+
+.nft-item {
+  border: 1px solid white;
+  display: flex;
+  max-width: min-content;
+  background-color: rgba(255, 0, 230, 0.148);
+}
 

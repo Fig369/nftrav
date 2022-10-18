@@ -12,9 +12,12 @@
         <link rel="stylesheet" href="/mira-reeliinda.ravageuniverse.com/CSS/styles.css">
         <link rel="shortcut icon" type="image/png" href="gall/RBCMRicon.png">
     </head>
+
+
+        
     <body>
 
-        <div class="body-style">
+        <div class="body-style center">
 
         <header class="main-header">
             <!--center all below this comment-->
@@ -44,8 +47,8 @@
                 </div></a>
             </div> -->
             
-            <div class="container">
-                <img src="gall/RBCMR.png" alt="Avatar" class="image" style="width: 50%">
+            <div class="container center">
+                <img src="gall/RBCMR.png" alt="Avatar" class="image center" style="width: 50%">
                 <div class="middle">
                   <div class="text"><a href = "https://mira-reeliinda.ravageuniverse.com/nft.html" target="_self">View Collection</a></div>
                 </div>
@@ -54,45 +57,123 @@
             <!--add .on:hover; slightly increase box size, and increace opacity 15% on border and box fill, for all drop down boxes, make entire box clickable to view dropdown-->
 
 
-
-
             <div class ="txtcontainer">
                 <h2>Mira Reeliinda Collection Details</h2>
                 <!--Drop down text-->
-                <p>
-                    Mira Reeliinda is a collection of access tokens based on <a href="https://reeliinda.ravageuniverse.com" target="_blank">Reeliinda Zolly</a>, an original character by Seven Murillo. Mira Reeliinda Collection will be exclusivly on the Tezos Blockchain. These access tokens will unlock content from the Ravage Comic Universe. 
-                </p>
+                <p><span id="dots1"></span><span id="more1">Mira Reeliinda is a collection of access tokens based on <a href="https://reeliinda.ravageuniverse.com" target="_blank">Reeliinda Zolly</a>, an original character by Seven Murillo. Mira Reeliinda Collection will be exclusivly on the Tezos Blockchain. These access tokens will unlock content from the Ravage Comic Universe. </span>
+                <button onclick="myFunction1()" id="myBtn1">See more  <i class="arrow down"></i></button></p>
             </div>
+
             <div class ="txtcontainer">
                 <h2>What will the funds be used for?</h2>
                 <!--Drop down text-->
-                <p>
-                    Text here!   
-                </p>
+                <p><span id="dots2"></span><span id="more2">Text here!</span>
+                <button onclick="myFunction2()" id="myBtn2">See more  <i class="arrow down"></i></button></p>
             </div>
+
             <div class ="txtcontainer">
                 <h2>Access Token Ranks</h2>
                 <!--Drop down text-->
-                <p>
-                    Text here! 
-                </p>
+                <p><span id="dots3"></span><span id="more3">Text here!</span>
+                <button onclick="myFunction3()" id="myBtn3">See more  <i class="arrow down"></i></button></p>
             </div>
+
             <div class ="txtcontainer">
                 <h2>Owning Mira Reeliinda NFTs</h2>
                 <!--Drop down text-->
-                <p>
-                    Text here! 
-                </p>
+                <p><span id="dots4"></span><span id="more4">Text here!</span>
+                <button onclick="myFunction4()" id="myBtn4">See more  <i class="arrow down"></i></button></p>
             </div>
+           
+
             <!--both buttons side by side, add .on:hover = slightly increase size and change color to red for both boxes-->
-            <div class="traitpage">
-                <a href ="https://mira-reeliinda.ravageuniverse.com/traits.html" target="_self"><button class="btndesign1">Traits</button></a>
-            </div>
-            <div class="mainsite">
-                <a href ="https://ravageuniverse.com" target="_self"><button class="btndesign2">Ravage Universe</button></a>
-            </div>
+        <div id="button-container">
+
+            <button class="red-button" type="button home-button" id="button1"><a href ="https://mira-reeliinda.ravageuniverse.com/traits.html" target="_self">Traits</a></button>
+
+
+            <button class="red-button" type="button contact-button" id="button2"><a href="https://ravageuniverse.com" target="_self">Ravage<br>Universe</a></button>
+
+        </div>
+
+
         </main>
 
         </div>
+        <script>
+            function myFunction1() {
+              var dots1 = document.getElementById("dots1");
+              var moreText1 = document.getElementById("more1");
+              var btnText1 = document.getElementById("myBtn1");
+              var btnStyle1 = document.getElementById("myBtn1");
+            
+              if (dots1.style.display === "none") {
+                dots1.style.display = "inline";
+                btnText1.innerHTML = "see more"; 
+                moreText1.style.display = "none";
+                btnStyle1.style.marginTop = "20px";
+              } else {
+                dots1.style.display = "none";
+                btnText1.innerHTML = "see less"; 
+                moreText1.style.display = "inline";
+                btnStyle1.style.marginBottom = "40px";
+              }
+            }
+            function myFunction2() {
+              var dots2 = document.getElementById("dots2");
+              var moreText2 = document.getElementById("more2");
+              var btnText2 = document.getElementById("myBtn2");
+              var btnStyle2 = document.getElementById("myBtn2");
+            
+              if (dots2.style.display === "none") {
+                dots2.style.display = "inline";
+                btnText2.innerHTML = "see more"; 
+                moreText2.style.display = "none";
+                btnStyle2.style.marginTop = "20px";
+              } else {
+                dots2.style.display = "none";
+                btnText2.innerHTML = "see less"; 
+                moreText2.style.display = "inline";
+                btnStyle2.style.marginBottom = "40px";
+              }
+            }
+            function myFunction3() {
+              var dots3 = document.getElementById("dots3");
+              var moreText3 = document.getElementById("more3");
+              var btnText3 = document.getElementById("myBtn3");
+              var btnStyle3 = document.getElementById("myBtn3");
+            
+              if (dots3.style.display === "none") {
+                dots3.style.display = "inline";
+                btnText3.innerHTML = "see more"; 
+                moreText3.style.display = "none";
+                btnStyle3.style.marginBottom = "40px";
+              } else {
+                dots3.style.display = "none";
+                btnText3.innerHTML = "see less"; 
+                moreText3.style.display = "inline";
+                btnStyle3.style.marginBottom = "40px";
+              }
+            }
+            function myFunction4() {
+              var dots4 = document.getElementById("dots4");
+              var moreText4 = document.getElementById("more4");
+              var btnText4 = document.getElementById("myBtn4");
+              var btnStyle4 = document.getElementById("myBtn4");
+            
+              if (dots4.style.display === "none") {
+                dots4.style.display = "inline";
+                btnText4.innerHTML = "see more"; 
+                moreText4.style.display = "none";
+                btnStyle4.style.marginTop = "20px";
+              } else {
+                dots4.style.display = "none";
+                btnText4.innerHTML = "see less"; 
+                moreText4.style.display = "inline";
+                btnStyle4.style.marginBottom = "40px";
+              }
+            }
+            </script>
+        
     </body>
 </html>
